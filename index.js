@@ -33,7 +33,7 @@ setTimeout(() => {
                             document.querySelector( "button.compose-btn-send" ).click();
                         }, 1000)
                     }
-                }, 30000);
+                }, 1800000);
             }
         })
     }, 2000)

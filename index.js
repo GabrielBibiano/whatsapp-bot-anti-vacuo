@@ -1,4 +1,3 @@
-
 var i;
 
 function simulateMouseEvents(element, eventName) {

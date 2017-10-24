@@ -34,8 +34,8 @@ setTimeout(() => {
                             document.querySelector( "button.compose-btn-send" ).click();
                         }, 1000)
                     }
-                }, 2000);
+                }, 30000);
             }
         })
-    }, 30000)
+    }, 2000)
 }, 10000)

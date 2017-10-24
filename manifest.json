@@ -1,0 +1,45 @@
+{
+	// Obrigatório
+	"manifest_version": 2,
+	"name": "Anti Vácuo",
+    "version": "1.0",
+
+	// Descrição da nossa extensão
+    "description": "",
+    "permissions": [ 
+        "storage",
+        "tabs",
+        "declarativeContent",
+        "unlimitedStorage",
+        "https://web.whatsapp.com/*"
+    ],
+
+
+	// Íconea da nossa extensão
+	"icons": {
+
+	},
+
+    // Utilizaremos as "Page Actions" e registramos isso aqui
+    "page_action": {
+        "default_icon": { 
+     
+        },
+        "default_title": "Anti Vácuo"
+    },
+
+    // Aqui declaramos as permissões que precisamos
+    
+    // Utilizaremos uma "Event Page" (note o persistent: false)
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+
+    // Injetaremos esses arquivos quando "match" ocorrer
+    "content_scripts": [ {
+        "js": [ "index.js"],
+        "css": [  ],
+        "matches": [ "https://web.whatsapp.com/*" ]
+    } ]
+}
